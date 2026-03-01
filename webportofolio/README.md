@@ -4,6 +4,21 @@ Website ini merupakan portfolio statis yang dibuat menggunakan HTML, CSS, Bootst
 
 Website dirancang responsif dan memiliki navigasi scroll antar section.
 
+### Struktur Folder
+```
+webportfolio/
+│
+├── index.html
+├── style.css
+├── README.md
+└── assets/
+    ├── profile.jpeg
+    ├── background.png
+    ├── SertifWorkshop.jpeg
+    ├── SertifUIUX1.png
+    └── SertifUIUX2.png
+```
+
 # 1. Section Home (Hero Section)
 <img width="2879" height="1702" alt="image" src="https://github.com/user-attachments/assets/02de84b3-2fac-4f2f-8676-2ac38ce9d577" />
 
@@ -22,14 +37,12 @@ Website dirancang responsif dan memiliki navigasi scroll antar section.
     background: url("assets/background.png") no-repeat center center/cover;
 }
 ```
-
-* Overlay dibuat menggunakan pseudo-element `::before`
+* Overlay dibuat menggunakan pseudo-element `::before`, untuk memberikan efek gelap agar teks tetap terbaca
+di atas background image.
 * Tombol menggunakan Bootstrap button class
 
----
-
 # 2. Navbar
-<img width="2879" height="1704" alt="image" src="https://github.com/user-attachments/assets/6640d284-3a2b-4e71-b78f-480cf2029878" />
+<img width="2879" height="510" alt="image" src="https://github.com/user-attachments/assets/1d324581-6309-4f21-b49f-1b2b256dddb1" />
 
 ### Tampilan:
 * Foto profil berbentuk lingkaran
@@ -46,9 +59,16 @@ Website dirancang responsif dan memiliki navigasi scroll antar section.
 {{ major }}
 {{ university }}
 ```
+Profile hover dibuat menggunakan:
+```
+- position: relative pada wrapper
+- position: absolute pada info box
+- opacity dan transform untuk efek animasi
+- transition untuk smooth animation
+```
 
 # 3. Section About Me
-<img width="2879" height="1704" alt="image" src="https://github.com/user-attachments/assets/6872ff37-749b-4713-b321-50e69b0d4e68" />
+<img width="2879" height="1701" alt="image" src="https://github.com/user-attachments/assets/d28ab35c-9405-446b-88f6-fb8d50e47a78" />
 
 ### Tampilan:
 * Deskripsi diri
@@ -110,3 +130,9 @@ col-lg-6
 # Nilai Tambah
 - Menggunakan Bootstrap 5 (navbar, grid, card, progress bar, responsive design)
 - Menggunakan Vue JS untuk interpolation dan rendering data statis
+
+### Responsive Design
+Website menggunakan Bootstrap Grid System sehingga:
+- Layout 2 kolom pada layar besar
+- Berubah menjadi 1 kolom pada layar kecil
+- Navbar collapse otomatis pada perangkat mobile
