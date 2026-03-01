@@ -7,4 +7,5 @@ B - Sistem Informasi
 Readme ini hanya sebagai daftar project kedepannya jika ada ada minpro berikutnya
 
 ## Mini Project 1 - Web Portofolio
-Readme penjelasan aplikasinya ada didalam folder [Webportofolio](webportofolio) atau bisa klik [Readme Web Portofolio](webportofolio/README.md)
+Readme penjelasan webnya ada didalam folder [Webportofolio](webportofolio) atau bisa klik [Readme Web Portofolio](webportofolio/README.md)
+
