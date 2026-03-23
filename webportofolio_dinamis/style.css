@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.section-full {
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.nav-profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-nav {
+    position: relative;
+}
+
+.profile-info {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.profile-nav:hover .profile-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url("assets/background.png") no-repeat center center/cover;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.experience-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-list li {
+    margin-bottom: 10px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.footer a {
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #1cc88a;
+    transform: scale(1.15);
+}
+
+.footer hr {
+    opacity: 0.2;
+}
+
+.footer .fs-4 a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    text-align: center;
+}
