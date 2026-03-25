@@ -11,3 +11,4 @@ Readme penjelasan webnya ada didalam folder [Webportofolio](webportofolio) atau 
 
 ## Mini Project 2 - Web Portofolio Dinamis
 Readme penjelasan webnya ada didalam folder [Webportofolio Dinamis](webportofolio_dinamis) atau bisa klik [Readme Web Portofolio Dinamis](webportofolio_dinamis/README.md)
+File sql bisa di download di [Schema database](portofolio_db.sql)
